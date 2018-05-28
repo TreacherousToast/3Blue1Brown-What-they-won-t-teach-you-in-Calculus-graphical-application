@@ -11,7 +11,7 @@ void draw()
   background(0);
   for (float x = min; x <= max; x+=spacing)
   {
-    float y = sqrt(25-sq(x));
+    float y = sqrt(25-sq(x)); // function
     stroke(255,((x+max)/domainMagnitude)*255,((x+max)/domainMagnitude)*255);
     line(x*((width/2)/max)+width/2,100,y*((width/2)/max)+width/2,height-100);
   }
